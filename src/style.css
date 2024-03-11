@@ -241,7 +241,7 @@ nav.scrolling {
   box-shadow: var(--shadow);
   border-radius: 0.5rem;
   padding: 0.2rem 2rem;
-  background: transparent;
+  background: var(--inner-shadow);
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -253,7 +253,7 @@ nav.scrolling {
   color: var(--color-tertiary);
 }
 .navbar-brand .navbar-brand:hover {
-  color: #666;
+  color: var(--color-text);
   box-shadow: var(--inner-shadow);
 }
 .nav-icons {
@@ -265,7 +265,7 @@ nav.scrolling {
   margin: 0.5rem;
   color: var(--color-text);
   background: var(--color-bg);
-  box-shadow: var(--shadow);
+  box-shadow: var(--inner-shadow);
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
