@@ -338,10 +338,9 @@ nav.scrolling {
   color: var(--color-tertiary);
   box-shadow: var(--inner-shadow);
 }
-
 .img-fluid {
-   max-width: 35rem;
-    height: auto;
+   max-width: 35px;
+    height: 100%;
     box-shadow: var(--shadow);
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
@@ -351,7 +350,7 @@ nav.scrolling {
     float: right;
     margin: 0 0 0 15px;
 }
-img {
+.img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
@@ -423,7 +422,7 @@ img {
 
 .skills__container-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -437,6 +436,7 @@ img {
   transform: rotate(25deg);
 }
 
+
 .skills__container-name {
   font-size: 40px;
   display: block;
@@ -449,9 +449,24 @@ img {
               PORTFOLIO
 ========================================================*/
 .content h1 {
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 50px;
+    line-height: 50px;
 }
+.content {
+    margin: 30px;
+}
+img, svg {
+    vertical-align: middle;
+}
+.text-muted {
+    color: #6c757d !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
 .mb-5 {
     margin-bottom: 3rem !important;
 }
@@ -466,15 +481,14 @@ img {
 }
 .rounded {
     border-radius: 0.25rem !important;
+    margin: 15px 0 15px 0;
 }
 .mb-3 {
     margin-bottom: 1rem !important;
 }
-@media (min-width: 768px){
-.col-md-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}
+
+.text-center {
+    text-align: center !important;
 }
 .mb-5 {
   color: var(--color-tertiary);
@@ -487,22 +501,23 @@ img {
 .content h3 {
     font-size: 24px;
     line-height: 1.5;
+    text-align: center;
     font-family: var(--default-font-family);
 }
-.text-center {
-    text-align: center !important;
-}
+
 .content p {
-    font-size: 14px;
+    font-size: 15px;
 }
+
 .btn-branding {
     background: var(--color-tertiary);
     border-radius: 4px;
     color: black;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 15px 15px;
+    
 }
 .btn-branding:hover {
   color: var(--color-bg);
@@ -680,6 +695,8 @@ footer .contact-box {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
+
+  
   
 }
 /* ============= Ipad Pro 11 ====================== */
@@ -794,7 +811,11 @@ footer .contact-box {
   .container-md, .container-sm {
     max-width: 720px;
 }
+.img-fluid{
+  max-width: 80%;
 }
+}
+
 
 /* ======================================================
               RESPONSIVE MOBILE
@@ -812,11 +833,10 @@ footer .contact-box {
     font-size: 13px;
   }
   #theme-btn {
-    font-size: 13px;
+    font-size: 15px;
   }
   .home .right img {
     display: block;
-    height: 14rem;
     max-width: 100%;
     margin-top: -15px;
   }
@@ -841,7 +861,7 @@ footer .contact-box {
     line-height: 2rem;
   }
   .home .left p {
-    font-size: 0.7rem;
+    font-size: 30px;
   }
 
   .home .social-icons i {
@@ -883,12 +903,7 @@ footer .contact-box {
   .portfolio-container .tab-content {
     grid-template-columns: 1fr;
   }
-  .testimonial .title h2 {
-    margin-top: 50px;
-  }
-  .testimonial-container .card {
-    min-width: 100%;
-  }
+
 
   .contact {
     min-height: 100vh;
@@ -936,8 +951,16 @@ footer .contact-box {
     font-size: 96%;
     letter-spacing: 0.05rem;
   }
+  .img-fluid{
+    max-width: 100%;
+  }
+  
 }
 @media (prefers-reduced-motion: no-preference){
 :root {
     scroll-behavior: smooth;
 } }
+
+.skills__container .container .grid {
+  justify-items: center;
+}
